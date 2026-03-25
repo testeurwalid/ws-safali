@@ -1,0 +1,311 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="WebStudio SiteGen 8.2.0"><title>Safali — boulangerie à Mohammedia</title><meta name="description" content="· Vente à emporter"><meta property="og:title" content="Safali — boulangerie à Mohammedia"><meta property="og:description" content="· Vente à emporter"><meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqXZbhZLpJVcaqXsJB_abOCbKatl10ORhu6uChV9SGk_bpJhCsjrwqZmnYTDK1cU5928N3kpNLNGNLDGd_WdYMAXyjCw0rq2eQJYd-jFOLZPTf-hGNLHv-GwV9EbzIPwCGaJxnE_bKBcgJg=w1200-h800-p-k-no"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style>@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap");</style><style>:root{--bg:#FAECE0;--fg:#0D1535;--mut:rgba(13,21,53,0.45);--line:rgba(131,93,46,0.12);--acc:#835D2E;--acc2:#5F411D;--card:#FFFFFF;--fh:'Playfair Display', ui-serif, Georgia, serif;--fb:'Lato', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;--r:22px;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg, rgba(161,98,7,.10), transparent 48%),radial-gradient(900px 520px at 90% 20%, rgba(37,99,235,.10), transparent 60%),var(--bg);color:var(--fg);font-family:var(--fb);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:var(--acc);color:#fff}
+
+header{position:fixed;inset:0 0 auto 0;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 6vw;z-index:60;transition:all .25s}
+header.sc{background:rgba(255,255,255,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--fh);text-decoration:none;font-size:18px;letter-spacing:.02em}
+.burger{display:none;gap:6px;flex-direction:column;background:transparent;border:0;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--fg);border-radius:2px;opacity:.85}
+.nav{display:flex;align-items:center;gap:10px}
+.nav a{text-decoration:none;font-size:12px;letter-spacing:.10em;text-transform:uppercase;color:var(--mut);padding:10px 10px;border-radius:999px;transition:all .2s}
+.nav a:hover{color:var(--fg);background:rgba(0,0,0,.04)}
+.nav .navcta{background:var(--acc);color:#fff;font-weight:900}
+
+.hero{min-height:100vh;padding:118px 6vw 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:center;max-width:1240px;margin:0 auto}
+.k{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--mut)}
+.h1{font-family:var(--fh);font-size:clamp(40px,4.6vw,68px);line-height:1.02;margin:14px 0 10px}
+.sub{color:var(--mut);line-height:1.85;max-width:70ch}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;text-decoration:none;border-radius:16px;padding:12px 14px;font-weight:950;letter-spacing:.06em;font-size:12px;border:1px solid var(--line);color:var(--fg);background:rgba(255,255,255,.65);transition:transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.acc{background:var(--acc);color:#fff;border-color:transparent}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.fact{border:1px solid var(--line);background:rgba(255,255,255,.60);border-radius:18px;padding:12px}
+.fact b{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.fact span{display:block;margin-top:6px;color:var(--mut);font-size:12px;line-height:1.6}
+
+.heroCard{border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:22px;padding:16px;box-shadow:0 26px 90px rgba(0,0,0,.08)}
+.heroCard img{width:100%;height:220px;object-fit:cover;border-radius:18px;border:1px solid var(--line);display:block}
+.heroCard h3{margin:12px 0 8px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.heroCard .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.heroCard label{display:block;font-size:11px;color:var(--mut);margin-top:10px}
+.heroCard input,.heroCard select{width:100%;padding:11px 12px;border-radius:16px;border:1px solid var(--line);background:#fff;font:inherit;margin-top:6px}
+.heroCard button{margin-top:12px;width:100%;border:0;background:var(--acc);color:#fff;padding:12px 14px;border-radius:16px;font-weight:950;cursor:pointer}
+.heroCard p{margin:10px 0 0;color:var(--mut);font-size:12px;line-height:1.6}
+
+section{padding:76px 6vw;border-top:1px solid var(--line)}
+.wrap{max-width:1240px;margin:0 auto}
+.h2{font-family:var(--fh);font-size:clamp(26px,2.8vw,46px);margin:0 0 10px}
+.p{color:var(--mut);line-height:1.85;max-width:74ch}
+
+.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:22px}
+.card{grid-column:span 4;background:rgba(255,255,255,.68);border:1px solid var(--line);border-radius:22px;padding:16px}
+.card b{display:block;font-size:14px}
+.card p{margin:8px 0 0;color:var(--mut);line-height:1.8;font-size:13px}
+.card .m{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--mut);font-size:12px;background:#fff}
+
+.menuGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:18px}
+.mcard{grid-column:span 6;border:1px solid var(--line);border-radius:22px;padding:14px;background:rgba(255,255,255,.68);display:flex;justify-content:space-between;gap:14px}
+.mcard b{display:block;font-size:14px}
+.mcard span{display:block;margin-top:4px;color:var(--mut);font-size:12px;line-height:1.7;max-width:56ch}
+.mprice{font-family:var(--fh);font-size:16px;color:var(--acc);white-space:nowrap}
+
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:22px}
+.gal a{grid-column:span 4;border-radius:18px;overflow:hidden;border:1px solid var(--line);cursor:pointer;position:relative;background:#fff}
+.gal img{width:100%;height:210px;object-fit:cover;display:block;transform:scale(1.02);transition:transform .35s}
+.gal a:hover img{transform:scale(1.08)}
+.gal a em{position:absolute;inset:auto 10px 10px 10px;background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:999px;padding:8px 10px;font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.t{border:1px solid var(--line);border-radius:22px;padding:16px;background:rgba(255,255,255,.68)}
+.t blockquote{margin:0;line-height:1.8;color:var(--fg);font-size:13px}
+.t figcaption{margin-top:10px;color:var(--mut);font-size:12px}
+.t figcaption b{display:block;color:var(--fg)}
+.t figcaption span{display:block;margin-top:2px}
+
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;margin-top:22px}
+.box{border:1px solid var(--line);border-radius:22px;padding:16px;background:rgba(255,255,255,.68)}
+.box a{color:var(--fg)}
+
+.faqs{display:grid;gap:10px;margin-top:22px}
+.faq{background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:transparent;border:0;color:var(--fg);padding:14px 16px;cursor:pointer;font-weight:900}
+.faq-q i{font-style:normal;color:var(--mut)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a>div{padding:0 16px 16px;color:var(--mut);line-height:1.8;font-size:13px}
+.faq.open .faq-q i{color:var(--acc)}
+
+[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+[data-reveal].in{opacity:1;transform:none}
+
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:200}
+#lb.on{display:flex}
+#lb img{max-width:92vw;max-height:86vh;border-radius:18px;border:1px solid var(--line)}
+#lb button{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;border-radius:999px;padding:10px 12px;cursor:pointer}
+
+@media (max-width: 980px){
+  .hero{grid-template-columns:1fr;}
+  .cards .card{grid-column:span 6}
+  .menuGrid .mcard{grid-column:span 12}
+  .tgrid{grid-template-columns:1fr;}
+  .contact{grid-template-columns:1fr;}
+  .gal a{grid-column:span 6}
+}
+@media (max-width: 720px){
+  .burger{display:flex}
+  .nav{position:fixed;inset:70px 12px auto 12px;display:none;flex-direction:column;align-items:stretch;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:18px;padding:12px}
+  .nav.open{display:flex}
+  .cards .card{grid-column:span 12}
+  .gal a{grid-column:span 12}
+  .facts{grid-template-columns:1fr;}
+}
+
+[data-reveal]{opacity:1;transform:none}
+.js [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+/* ---- Layout variants (visual diversity) ---- */
+:root{
+  --section-pad: 96px;
+  --btn-r: 14px;
+  --btn-pad-y: 12px;
+  --btn-pad-x: 22px;
+  --card-shadow: 0 18px 50px rgba(0,0,0,.18);
+}
+body.layout-v0{ --section-pad: 88px; --btn-r: 12px; --card-shadow: 0 16px 44px rgba(0,0,0,.18); }
+body.layout-v1{ --section-pad: 110px; --btn-r: 999px; --btn-pad-x: 28px; --card-shadow: 0 22px 70px rgba(0,0,0,.22); }
+body.layout-v2{ --section-pad: 80px; --btn-r: 10px; --card-shadow: 0 12px 30px rgba(0,0,0,.14); }
+body.layout-v3{ --section-pad: 100px; --btn-r: 18px; --card-shadow: 0 20px 60px rgba(0,0,0,.20); }
+body.layout-v4{ --section-pad: 120px; --btn-r: 6px;  --card-shadow: 0 14px 40px rgba(0,0,0,.16); }
+section{ padding-top: var(--section-pad); padding-bottom: var(--section-pad); }
+.btn, .btn-main, .btn-hero, .btn-primary, .bp, .bo{
+  border-radius: var(--btn-r)!important;
+  padding: var(--btn-pad-y) var(--btn-pad-x)!important;
+}
+.card, .tile, .feature, .prop-card, .room-card, .glass, .panel{
+  box-shadow: var(--card-shadow);
+  border-radius: calc(var(--r) + 2px);
+}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Safali", "address": {"@type": "PostalAddress", "streetAddress": "PJ33+Q8V, Rue de Youssef Ben Tachfine, Mohammédia", "addressLocality": "Mohammedia", "addressCountry": "MA"}, "telephone": "+212680355280", "openingHours": "Lun–Sam 9h–20h"}</script></head><body id="top" data-seed=\"3096536545\"><header><a class="logo" href="#top">Safali</a><button class="burger" data-burger aria-label="Menu" aria-expanded="false"><span></span><span></span></button><nav class="nav" data-nav><a href="#specialites">Nos spécialités</a><a href="#contact">Contact</a><a href="#commande">Commande événement</a><a href="#galerie">Photos</a><a href="#faq">FAQ</a><a class="navcta" href="#contact">Contact</a></nav></header><main><section class="hero"><div><div class="k">boulangerie · Mohammedia</div><h1 class="h1" data-reveal>Douceurs artisanales à Mohammedia</h1><p class="sub" data-reveal>Chaque pièce réalisée à la main. Pas de conservateurs, pas de compromis sur la qualité.</p><div class="cta" data-reveal><a class="btn acc" href="#contact">Réserver</a><a class="btn" href="#menu">Voir la carte</a></div><div class="facts" data-reveal><div class="fact"><b>Wi‑Fi</b><span>Oui · idéal pour travailler</span></div><div class="fact"><b>À emporter</b><span>Commande rapide</span></div><div class="fact"><b>Brunch</b><span>Week‑end (sur réservation)</span></div></div></div><div class="heroCard" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqXZbhZLpJVcaqXsJB_abOCbKatl10ORhu6uChV9SGk_bpJhCsjrwqZmnYTDK1cU5928N3kpNLNGNLDGd_WdYMAXyjCw0rq2eQJYd-jFOLZPTf-hGNLHv-GwV9EbzIPwCGaJxnE_bKBcgJg=w1200-h800-p-k-no" alt="Safali" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>Commande rapide</h3><div class="row"><div><label>Personnes</label><select><option>1</option><option>2</option><option>4</option><option>6</option></select></div><div><label>Heure</label><input type="time"></div></div><label>Nom</label><input placeholder="Votre nom"><button type="button" onclick="location.href='https://wa.me/212680355280?text=Bonjour,%20je%20voudrais%20plus%20d&#x27;informations.'">WhatsApp</button><p>On confirme rapidement le créneau ou la commande sur WhatsApp.</p></div></section><section id="specialites"><div class="wrap"><h2 class="h2">Incontournables</h2><p class="p">Une sélection courte, bien exécutée, et une ambiance propre.</p><div class="cards"><article class="card" data-reveal><b>Entremets</b><p>Mousse, crémeux, biscuit: équilibre parfait.</p><div class="m"><span class="pill">Vitrine</span><span class="pill">Mohammedia</span></div></article><article class="card" data-reveal><b>Mille-feuille</b><p>Crème légère, feuilletage précis.</p><div class="m"><span class="pill">Classique</span><span class="pill">Mohammedia</span></div></article><article class="card" data-reveal><b>Macarons</b><p>Coques fines, garnitures fraîches.</p><div class="m"><span class="pill">Coffret</span><span class="pill">Mohammedia</span></div></article><article class="card" data-reveal><b>Viennoiseries</b><p>Croissants beurre, chocolatines, brioches.</p><div class="m"><span class="pill">Matin</span><span class="pill">Mohammedia</span></div></article><article class="card" data-reveal><b>Gteaux signature</b><p>Entremets, tartes, parts du jour.</p><div class="m"><span class="pill">Signature</span><span class="pill">Mohammedia</span></div></article><article class="card" data-reveal><b>Boulangerie</b><p>Pains tradition, complet, graines.</p><div class="m"><span class="pill">Fournée</span><span class="pill">Mohammedia</span></div></article></div></div></section><section id="menu"><div class="wrap"><h2 class="h2">Carte</h2><p class="p">Exemples d’articles (prix indicatifs). Demandez la carte du jour sur WhatsApp.</p><div class="menuGrid"><div class="mcard" data-reveal><div><b>Chausson</b><span>Pomme, cannelle</span></div><div class="mprice">10 MAD</div></div><div class="mcard" data-reveal><div><b>Brioche</b><span>Moelleuse</span></div><div class="mprice">12 MAD</div></div><div class="mcard" data-reveal><div><b>Croissant</b><span>Beurre, croustillant</span></div><div class="mprice">8 MAD</div></div><div class="mcard" data-reveal><div><b>Tarte citron</b><span>Acidule, meringue</span></div><div class="mprice">28 MAD</div></div><div class="mcard" data-reveal><div><b>Eclair chocolat</b><span>Creme, glace</span></div><div class="mprice">24 MAD</div></div><div class="mcard" data-reveal><div><b>Entremets</b><span>Selection du jour</span></div><div class="mprice">34 MAD</div></div><div class="mcard" data-reveal><div><b>Macarons</b><span>Assortiment</span></div><div class="mprice">26 MAD</div></div><div class="mcard" data-reveal><div><b>Cookies</b><span>Maison</span></div><div class="mprice">18 MAD</div></div><div class="mcard" data-reveal><div><b>Chocolat chaud</b><span>Cacao</span></div><div class="mprice">24 MAD</div></div><div class="mcard" data-reveal><div><b>Eau</b><span>Plate ou gazeuse</span></div><div class="mprice">12 MAD</div></div></div></div></section><section id="experience"><div class="wrap"><h2 class="h2">Ambiance</h2><p class="p">Lumière, détails, et moments partagés. Cliquez pour agrandir.</p><div class="gal"><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqXZbhZLpJVcaqXsJB_abOCbKatl10ORhu6uChV9SGk_bpJhCsjrwqZmnYTDK1cU5928N3kpNLNGNLDGd_WdYMAXyjCw0rq2eQJYd-jFOLZPTf-hGNLHv-GwV9EbzIPwCGaJxnE_bKBcgJg=w1200-h800-k-no" href="javascript:void(0)" aria-label="Photo 1" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqXZbhZLpJVcaqXsJB_abOCbKatl10ORhu6uChV9SGk_bpJhCsjrwqZmnYTDK1cU5928N3kpNLNGNLDGd_WdYMAXyjCw0rq2eQJYd-jFOLZPTf-hGNLHv-GwV9EbzIPwCGaJxnE_bKBcgJg=w1200-h800-k-no" alt="Safali photo 1" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerdjyr_p0KZxQvfmE6a_qAQan1fjN1XS1o2qi3DDNj31ucBQynyNbUKvIwoLi0gMgIKpCM2TREPTzoYSPi6UKGMabYfx5SFqGs1oL4A8b831NWA-dv3HV9sPyU0DmndDpYrB3IIfg=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 2" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerdjyr_p0KZxQvfmE6a_qAQan1fjN1XS1o2qi3DDNj31ucBQynyNbUKvIwoLi0gMgIKpCM2TREPTzoYSPi6UKGMabYfx5SFqGs1oL4A8b831NWA-dv3HV9sPyU0DmndDpYrB3IIfg=w1200-h800-p-k-no" alt="Safali photo 2" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepiOCNuaEexTXRrY40NCEIi-6FCSeHkk-lgPT9NQ6mafE3fgbwy77EkPg2T2haWEoFVOW5yLlO4WBSf0yyypI_OZROcPcsHIVpyxj2_hUqWq6bTyRSRfAbcr2fslhWxQhrcAVLK=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 3" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepiOCNuaEexTXRrY40NCEIi-6FCSeHkk-lgPT9NQ6mafE3fgbwy77EkPg2T2haWEoFVOW5yLlO4WBSf0yyypI_OZROcPcsHIVpyxj2_hUqWq6bTyRSRfAbcr2fslhWxQhrcAVLK=w1200-h800-p-k-no" alt="Safali photo 3" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepm6QK80JHTpby6Nu8psGAVvLsKw0PUx48CfMFflCmEhfwsH8Y1PIQTr2fxTP1Ybf1A5hIiV9rYFcDJC2j15ZI_GNYF0AVvx3QDxojUh5JWxmXyem53JJHTOYAByYfW6q_MTnCOEQ=w1200-h800-p-k-no" href="javascript:void(0)" aria-label="Photo 4" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepm6QK80JHTpby6Nu8psGAVvLsKw0PUx48CfMFflCmEhfwsH8Y1PIQTr2fxTP1Ybf1A5hIiV9rYFcDJC2j15ZI_GNYF0AVvx3QDxojUh5JWxmXyem53JJHTOYAByYfW6q_MTnCOEQ=w1200-h800-p-k-no" alt="Safali photo 4" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo3tt1O9gS6NnQWXnS_vE8C4nBcGoCnbqsiHyTs3R7398zzxnWsdaGPp7Pf5DLu_AnoEsn9X1nAEW_NgmksTgSViAUH4sp34rQdSu0t4hIfpLJcNwrVY_RUcLkPMAmbXpwjt3vOOZgQLCOF=w1200-h800-k-no" href="javascript:void(0)" aria-label="Photo 5" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweo3tt1O9gS6NnQWXnS_vE8C4nBcGoCnbqsiHyTs3R7398zzxnWsdaGPp7Pf5DLu_AnoEsn9X1nAEW_NgmksTgSViAUH4sp34rQdSu0t4hIfpLJcNwrVY_RUcLkPMAmbXpwjt3vOOZgQLCOF=w1200-h800-k-no" alt="Safali photo 5" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqfppDG7xYiixuRVmG-HNAEmCpptsE4iH6Htopgcuh_BXBnUoHoeEIH-lk6cf5GYl9qfqGOxC5bKDJJh4E5AqBQlm010IqDbYpJaanZv1-rZHGwhX_7T86_AkFMPUaFUUKvdk7H9g=w1200-h800-k-no" href="javascript:void(0)" aria-label="Photo 6" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqfppDG7xYiixuRVmG-HNAEmCpptsE4iH6Htopgcuh_BXBnUoHoeEIH-lk6cf5GYl9qfqGOxC5bKDJJh4E5AqBQlm010IqDbYpJaanZv1-rZHGwhX_7T86_AkFMPUaFUUKvdk7H9g=w1200-h800-k-no" alt="Safali photo 6" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerIqC0Njcz_oo4mB-wGIxybi01n-oiRmQL-KSW1IKFaBUV1rbBG9RtQxNsexZTX1QSUemojPC-8NQWqiFVv6WOJO_teOXAWBzwN3YyG8q9jWNKGiPaCP6npcvlFSBOOxF_HUT-cD4m8EOg=w1200-h800-k-no" href="javascript:void(0)" aria-label="Photo 7" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerIqC0Njcz_oo4mB-wGIxybi01n-oiRmQL-KSW1IKFaBUV1rbBG9RtQxNsexZTX1QSUemojPC-8NQWqiFVv6WOJO_teOXAWBzwN3YyG8q9jWNKGiPaCP6npcvlFSBOOxF_HUT-cD4m8EOg=w1200-h800-k-no" alt="Safali photo 7" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqI_yN2yXkaZyzi5BsfD9hcWPe0s3IvFIPUSAwwSKvI9Kb_PPBDMnsFKZd6T-7uBTEKkEL-7mGdoEOj4cT1WyK7ZQPYHor3CeudP2cbgRDZ2wuxFQ1ULXafu3BzH8JJAGEn-JDv1A=w1200-h800-k-no" href="javascript:void(0)" aria-label="Photo 8" data-reveal><img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqI_yN2yXkaZyzi5BsfD9hcWPe0s3IvFIPUSAwwSKvI9Kb_PPBDMnsFKZd6T-7uBTEKkEL-7mGdoEOj4cT1WyK7ZQPYHor3CeudP2cbgRDZ2wuxFQ1ULXafu3BzH8JJAGEn-JDv1A=w1200-h800-k-no" alt="Safali photo 8" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/a/ACg8ocJB3jva1h9by8P4A6XJCzfjFIHO70ARC2A9tR-nhg_zhXxUUg=w1200-h800-p-rp-mo-br100" href="javascript:void(0)" aria-label="Photo 9" data-reveal><img src="https://lh3.googleusercontent.com/a/ACg8ocJB3jva1h9by8P4A6XJCzfjFIHO70ARC2A9tR-nhg_zhXxUUg=w1200-h800-p-rp-mo-br100" alt="Safali photo 9" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/a-/ALV-UjWQ8CyojzB8xQcjJNxZ68oMjSuIWjAw7IrARZPBbBnOgzEBBxQ=w1200-h800-p-rp-mo-ba2-br100" href="javascript:void(0)" aria-label="Photo 10" data-reveal><img src="https://lh3.googleusercontent.com/a-/ALV-UjWQ8CyojzB8xQcjJNxZ68oMjSuIWjAw7IrARZPBbBnOgzEBBxQ=w1200-h800-p-rp-mo-ba2-br100" alt="Safali photo 10" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://lh3.googleusercontent.com/a/ACg8ocLf9n1c7FI7z4XLOMIlWGzNcp3-VP3tRjT1KI-zdqAmTI2xQSw=w1200-h800-p-rp-mo-br100" href="javascript:void(0)" aria-label="Photo 11" data-reveal><img src="https://lh3.googleusercontent.com/a/ACg8ocLf9n1c7FI7z4XLOMIlWGzNcp3-VP3tRjT1KI-zdqAmTI2xQSw=w1200-h800-p-rp-mo-br100" alt="Safali photo 11" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a><a data-lb="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" href="javascript:void(0)" aria-label="Photo 12" data-reveal><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&amp;q=85&amp;auto=format&amp;fit=crop" alt="Safali photo 12" data-fb="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=1400&amp;q=85&amp;auto=format&amp;fit=crop|data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%271600%27%20height=%271000%27%3E%3Cdefs%3E%3ClinearGradient%20id=%27g%27%20x1=%270%27%20y1=%270%27%20x2=%271%27%20y2=%271%27%3E%3Cstop%20offset=%270%27%20stop-color=%27#5ac1a0%27/%3E%3Cstop%20offset=%270.55%27%20stop-color=%27#c8bc20%27/%3E%3Cstop%20offset=%271%27%20stop-color=%27#f1fea0%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width=%271600%27%20height=%271000%27%20fill=%27url(#g)%27/%3E%3Ccircle%20cx=%271260%27%20cy=%27220%27%20r=%27280%27%20fill=%27rgba(255,255,255,.16)%27/%3E%3Ccircle%20cx=%27320%27%20cy=%27820%27%20r=%27360%27%20fill=%27rgba(0,0,0,.18)%27/%3E%3Ctext%20x=%2780%27%20y=%27140%27%20fill=%27rgba(255,255,255,.85)%27%20font-size=%2764%27%20font-family=%27ui-sans-serif,system-ui%27%20font-weight=%27800%27%3ESafali%3C/text%3E%3C/svg%3E" onerror="(function(img){try{var raw=img.getAttribute('data-fb')||'';if(!raw)return;var list=raw.split('|');if(!list.length)return;var i=parseInt(img.getAttribute('data-fbi')||'0',10);while(i<list.length && (!list[i] || list[i]===img.getAttribute('src'))){i++;}if(i>=list.length)return;img.setAttribute('data-fbi',String(i+1));img.setAttribute('src',list[i]);}catch(e){}})(this)" loading="lazy" decoding="async" referrerpolicy="no-referrer"><em>Voir</em></a></div></div></section><section id="avis"><div class="wrap"><h2 class="h2">Avis</h2><div class="tgrid"><figure class="t" data-reveal><blockquote>Une adresse qu&#x27;on garde pour soi. Service précis, ambiance chaude, et des saveurs nettes.</blockquote><figcaption><b>Omar B.</b><span>Mohammedia</span></figcaption></figure><figure class="t" data-reveal><blockquote>Privatisation pour un anniversaire: organisation impeccable et menu sur-mesure.</blockquote><figcaption><b>Samir K.</b><span>Casablanca</span></figcaption></figure><figure class="t" data-reveal><blockquote>Le couscous du vendredi est devenu un rituel. Meilleure table de Mohammedia.</blockquote><figcaption><b>Mehdi S.</b><span>Mohammedia</span></figcaption></figure></div></div></section><section id="faq"><div class="wrap"><h2 class="h2">FAQ</h2><p class="p">Réponses rapides aux questions fréquentes.</p><div class="faqs"><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Faut-il réserver ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Oui, surtout le soir et le week-end. Réservation en ligne ou par téléphone.</div></div></div><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Options végétariennes ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Oui. Nous adaptons plusieurs plats selon la saison et vos préférences.</div></div></div><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Privatisation ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Oui, entreprises et familles. Dites-nous votre date et votre budget.</div></div></div><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Livraison ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Selon la zone. Appelez-nous et on confirme délai et disponibilité.</div></div></div><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Allergènes ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Dites-le au service, on vous guide sur les plats adaptés.</div></div></div><div class="faq" data-acc-item data-reveal><button class="faq-q" data-acc type="button"><span>Paiement ?</span><i>+</i></button><div class="faq-a" data-acc-panel><div>Espèces et carte selon disponibilité. Confirmation au téléphone.</div></div></div></div></div></section><section id="contact"><div class="wrap"><h2 class="h2">Infos pratiques</h2><div class="contact"><div class="box" data-reveal><b>Safali</b><div style="margin-top:8px;color:var(--mut);line-height:1.8">PJ33+Q8V, Rue de Youssef Ben Tachfine, Mohammédia<br>Mohammedia</div><a class="btn acc" href="https://wa.me/212680355280?text=Bonjour,%20je%20voudrais%20plus%20d&#x27;informations." target="_blank" rel="noopener">WhatsApp</a></div><div class="box" data-reveal><div> <a href="tel:+212680355280">+212680355280</a></div><div style="margin-top:10px"> <a href="https://www.google.com/maps/search/PJ33+Q8V,+Rue+de+Youssef+Ben+Tachfine,+Mohammédia" target="_blank" rel="noopener">Google Maps</a></div><div style="margin-top:10px">Réponse rapide (WhatsApp).</div></div></div></div></section></main><footer style="padding:34px 6vw;color:var(--mut);border-top:1px solid var(--line)"><div class="wrap">© 2026 Safali</div></footer><div id="lb" aria-hidden="true"><button type="button" aria-label="Fermer">Fermer</button><img alt="Agrandissement"></div><script>
+(function(){
+  try{
+    // Only enable JS-scoped animations if this script runs correctly.
+    // If anything throws later, we remove the class so the page stays readable.
+    document.documentElement.classList.add('js');
+
+    const q = (s,el=document)=>el.querySelector(s);
+    const qa = (s,el=document)=>Array.from(el.querySelectorAll(s));
+
+    // Layout fingerprint (per-business visual variation without breaking templates)
+    try{
+      const title = document.title || '';
+      const meta = q('meta[name="description"]');
+      const desc = meta && meta.content ? meta.content : '';
+      const body = document.body;
+      let seed = '';
+      if(body && body.dataset && body.dataset.seed){ seed = String(body.dataset.seed); }
+      if(!seed){ seed = (title + '|' + desc).slice(0, 300); }
+      let h = 0;
+      for(let i=0;i<seed.length;i++){ h = ((h<<5)-h) + seed.charCodeAt(i); h |= 0; }
+      const v = Math.abs(h) % 5;
+      const cls = 'layout-v' + v;
+      if(body){
+        body.classList.add(cls);
+        body.dataset.layout = cls;
+      }
+      // Section order shuffle (keeps hero first, contact last)
+      try{
+        const main = q('main');
+        if(main){
+          const sections = Array.from(main.querySelectorAll('section'));
+          if(sections.length > 3){
+            const hero = sections[0];
+            const rest = sections.slice(1);
+            const tailIds = ['contact','rdv','reservation','booking','devis'];
+            const middle = [];
+            const tail = [];
+            rest.forEach(s=>{
+              const id = (s.getAttribute('id')||'').toLowerCase();
+              if(tailIds.includes(id)) tail.push(s);
+              else middle.push(s);
+            });
+            let seedNum = Math.abs(h) || 123456;
+            const rnd = ()=>{ seedNum = (seedNum * 1664525 + 1013904223) >>> 0; return seedNum / 4294967296; };
+            for(let i=middle.length-1;i>0;i--){
+              const j = Math.floor(rnd()*(i+1));
+              const tmp = middle[i]; middle[i]=middle[j]; middle[j]=tmp;
+            }
+            const ordered = [hero, ...middle, ...tail];
+            ordered.forEach(el=>main.appendChild(el));
+          }
+        }
+      }catch(_e){}
+    }catch(_e){}
+
+    // Mobile nav
+    const burger = q('[data-burger]');
+    const nav = q('[data-nav]');
+    if(burger && nav){
+      burger.addEventListener('click', ()=>{
+        nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', nav.classList.contains('open') ? 'true':'false');
+      });
+      qa('a[href^="#"]', nav).forEach(a=>a.addEventListener('click', ()=>{
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }));
+    }
+
+    // Reveal on scroll (safe fallback if IntersectionObserver isn't available)
+    const reveals = qa('[data-reveal]');
+    if(reveals.length){
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+        }, {threshold: 0.12});
+        reveals.forEach(el=>io.observe(el));
+      }else{
+        reveals.forEach(el=>el.classList.add('in'));
+      }
+    }
+
+    // Accordions
+    qa('[data-acc]').forEach(acc=>{
+      acc.addEventListener('click', ()=>{
+        const item = acc.closest('[data-acc-item]');
+        const opened = item.classList.toggle('open');
+        const panel = q('[data-acc-panel]', item);
+        if(panel){ panel.style.maxHeight = opened ? panel.scrollHeight+'px' : '0px'; }
+      });
+    });
+
+    // Tabs
+    qa('[data-tabs]').forEach(root=>{
+      const btns = qa('[data-tab]', root);
+      const panes = qa('[data-pane]', root);
+      const activate = (id)=>{
+        btns.forEach(b=>b.classList.toggle('on', b.getAttribute('data-tab')===id));
+        panes.forEach(p=>p.classList.toggle('on', p.getAttribute('data-pane')===id));
+      };
+      btns.forEach(b=>b.addEventListener('click', ()=>activate(b.getAttribute('data-tab'))));
+      if(btns[0]) activate(btns[0].getAttribute('data-tab'));
+    });
+
+    // Lightbox
+    const lb = q('#lb');
+    const lbImg = q('#lb img');
+    const lbClose = q('#lb button');
+    if(lb && lbImg){
+      qa('[data-lb]').forEach(el=>{
+        el.addEventListener('click', ()=>{
+          const im = el.querySelector('img');
+          const src = (im && (im.currentSrc || im.src)) || el.getAttribute('data-lb');
+          if(!src) return;
+          lbImg.src = src;
+          lb.classList.add('on');
+        });
+      });
+      const close = ()=>{ lb.classList.remove('on'); lbImg.src=''; };
+      if(lbClose) lbClose.addEventListener('click', close);
+      lb.addEventListener('click', (e)=>{ if(e.target===lb) close(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') close(); });
+    }
+
+    // Image fallback (when a remote image is blocked/expired)
+    // Supports multiple fallbacks via: data-fb="url1|url2"
+    qa('img[data-fb]').forEach(img=>{
+      const raw = (img.getAttribute('data-fb')||'').trim();
+      if(!raw) return;
+      const list = raw.split('|').map(s=>s.trim()).filter(Boolean);
+      if(!list.length) return;
+      img.addEventListener('error', ()=>{
+        let i = parseInt(img.getAttribute('data-fbi')||'0', 10);
+        while(i < list.length && (!list[i] || list[i] === img.getAttribute('src'))){ i++; }
+        if(i >= list.length) return;
+        img.setAttribute('data-fbi', String(i+1));
+        img.src = list[i];
+      });
+    });
+
+    // Background image fallback (hero/media blocks)
+    // Usage: <div class="hbg" data-bg="url1|url2|..."></div>
+    // We probe URLs sequentially with an Image() to detect failures, then set backgroundImage.
+    qa('[data-bg]').forEach(el=>{
+      const raw = (el.getAttribute('data-bg')||'').trim();
+      if(!raw) return;
+      const list = raw.split('|').map(s=>s.trim()).filter(Boolean);
+      if(!list.length) return;
+      let idx = 0;
+      const setBg = (u)=>{
+        const safe = String(u||'').replace(/['"]/g, (m)=> m==="'" ? "%27" : "%22");
+        el.style.backgroundImage = "url('" + safe + "')";
+      };
+      // Paint something immediately; if it fails, the probe will replace it.
+      try{ if(!el.style.backgroundImage) setBg(list[0]); }catch(e){}
+      const probe = ()=>{
+        if(idx >= list.length) return;
+        const u = list[idx++];
+        if(!u) return probe();
+        const img = new Image();
+        img.onload = ()=>{ try{ setBg(u); }catch(e){} };
+        img.onerror = ()=>{ probe(); };
+        img.src = u;
+      };
+      probe();
+    });
+
+    // Header shadow on scroll
+    const header = q('header');
+    if(header){
+      const onScroll = ()=>header.classList.toggle('sc', window.scrollY>8);
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    }
+  }catch(e){
+    try{ document.documentElement.classList.remove('js'); }catch(_e){}
+  }
+})();
+</script></body></html>
